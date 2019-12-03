@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/indicateur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:text="indicateur"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/resultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_toRightOf="@id/indicateur"
+        android:layout_toEndOf="@id/indicateur"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Résultat"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/resultat"
+        android:layout_alignBottom="@+id/resultat"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+
+</RelativeLayout>

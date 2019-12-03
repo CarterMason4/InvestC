@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nicolas.investc.App.RoiSaisieActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/roiToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="ROI"
+        app:titleTextColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/enter_datas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_datas"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" />
+
+
+
+    <EditText
+        android:id="@+id/gain_perte"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_datas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:hint="@string/gain"
+        android:backgroundTint="@color/primaryDark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/gain_perte"
+        android:layout_alignBaseline="@id/gain_perte"/>
+
+
+
+
+    <EditText
+        android:id="@+id/investissement_roi"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/primaryDark"
+        android:gravity="center"
+        android:hint="Investissement initial"
+        android:inputType="numberDecimal"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/investissement_roi"
+        android:layout_alignBaseline="@id/investissement_roi"/>
+
+
+    <Button
+        android:id="@+id/effacerRoi"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_bouton_effacer"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="@string/effacer"
+        android:textColor="@color/white"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/validerRoi"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/valider"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_bouton_valider"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

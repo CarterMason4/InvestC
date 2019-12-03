@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>-->
+
+    <color name="primary">#0097f2</color>
+    <color name="primaryDark">#0077bf</color>
+    <color name="accentWhite">#fff</color>
+
+    <color name="black">#000</color>
+    <color name="white">#FFF</color>
+    <color name="green">#00900a</color>
+    <color name="red">#e00</color>
+
+    <color name="btnColor">#f0cf00</color>
+
+    <color name="orange">#ff9913</color>
+
+    <!-- ROI THEME COLORS -->
+
+    <color name="darkGreen">#007c02</color>
+
+    <!-- VAN THEME COLORS -->
+
+    <color name="darkOrange">#ff8018</color>
+    d66100
+    
+</resources>

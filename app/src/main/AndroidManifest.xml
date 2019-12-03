@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nicolas.investc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".App.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".App.RoiSaisieActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RoiTheme" />
+        <activity
+            android:name=".App.ChoixIndicateurActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".App.ResultatRoiActivity"
+            android:label="@string/title_activity_resultat_roi"
+            android:theme="@style/RoiTheme" />
+        <activity
+            android:name=".App.ConsulterRoiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RoiTheme" />
+        <activity
+            android:name=".App.VanSaisieActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/VanTheme" />
+        <activity
+            android:name=".App.ResultatVanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/VanTheme" />
+        <activity
+            android:name=".App.ChoixSimulationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".App.ConsulterVanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/VanTheme"/>
+    </application>
+
+</manifest>

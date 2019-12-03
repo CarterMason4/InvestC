@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <EditText
+        android:id="@+id/popUpEdtNbAnnees"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true"
+        android:hint="@string/nb_annees"
+        android:gravity="center"
+        android:backgroundTint="@color/orange"
+        android:inputType="numberDecimal"
+        android:maxLines="1"/>
+    
+    <EditText
+        android:id="@+id/popUpEdtInvestissementVan"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popUpEdtNbAnnees"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/investissement"
+        android:gravity="center"
+        android:backgroundTint="@color/orange"
+        android:inputType="numberDecimal"
+        android:maxLines="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€"
+        android:layout_toRightOf="@id/popUpEdtInvestissementVan"
+        android:layout_alignBaseline="@id/popUpEdtInvestissementVan"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/popUpEdtTaux"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popUpEdtInvestissementVan"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/orange"
+        android:hint="@string/taux"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:maxLines="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€"
+        android:layout_toRightOf="@id/popUpEdtTaux"
+        android:layout_alignBaseline="@id/popUpEdtTaux"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:inputType="numberDecimal"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/popUpEdtFlux"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/flux"
+        android:gravity="center"
+        android:layout_below="@id/popUpEdtTaux"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/orange"
+        android:inputType="numberDecimal"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€"
+        android:layout_toRightOf="@id/popUpEdtFlux"
+        android:layout_alignBaseline="@id/popUpEdtFlux"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/popUpBtnEffacerVan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popUpEdtFlux"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_bouton_effacer"
+        android:layout_marginTop="15dp"
+        android:text="@string/effacer"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/popUpBtnValiderVan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popUpBtnEffacerVan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/valider"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_bouton_valider"/>
+
+
+
+</RelativeLayout>

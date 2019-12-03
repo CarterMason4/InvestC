@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/popUpGainEdt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Gain"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/popUpGainEdt"
+        android:layout_toEndOf="@id/popUpGainEdt"/>
+
+    <EditText
+        android:id="@+id/popUpInvestEdt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popUpGainEdt"
+        android:hint="Investissement"
+        android:gravity="center"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/popUpInvestEdt"
+        android:layout_toEndOf="@id/popUpInvestEdt"
+        android:layout_alignBaseline="@id/popUpInvestEdt"/>
+
+    <Button
+        android:id="@+id/popUpBtnEffacer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_bouton_effacer"
+        android:layout_below="@id/popUpInvestEdt"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/effacer"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/popUpBtnValider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popUpBtnEffacer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/valider"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_bouton_valider"/>
+
+</RelativeLayout>

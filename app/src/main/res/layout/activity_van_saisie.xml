@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.nicolas.investc.App.VanSaisieActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/roiToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="VAN"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/enter_datas_van"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_datas"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" />
+
+    <EditText
+        android:id="@+id/edtNbAnnes"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:layout_below="@id/enter_datas_van"
+        android:layout_marginTop="20dp"
+        android:hint="@string/nb_annees"
+        android:gravity="center"
+        android:backgroundTint="@color/primaryDark"/>
+
+    <EditText
+        android:id="@+id/edtInvestissementVan"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNbAnnes"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/investissement"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/primaryDark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€"
+        android:layout_toRightOf="@id/edtInvestissementVan"
+        android:layout_toEndOf="@id/edtInvestissementVan"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@id/edtInvestissementVan"/>
+
+    <EditText
+        android:id="@+id/edtTaux"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtInvestissementVan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="@string/taux"
+        android:gravity="center"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:backgroundTint="@color/primaryDark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:layout_toRightOf="@id/edtTaux"
+        android:layout_toEndOf="@id/edtTaux"
+        android:layout_alignBaseline="@id/edtTaux"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edtFlux"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTaux"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="@string/flux"
+        android:backgroundTint="@color/primaryDark"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:maxLines="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="€"
+        android:layout_toRightOf="@id/edtFlux"
+        android:layout_alignBaseline="@id/edtFlux"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/effacerVan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_bouton_effacer"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="@string/effacer"
+        android:textColor="@color/white"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/validerVan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/valider"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_bouton_valider"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

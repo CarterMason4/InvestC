@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nicolas.investc.App.ResultatVanActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/vanToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Résultat"
+        app:titleTextColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/nbAnnees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nb_annees"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="110dp" />
+
+    <TextView
+        android:id="@+id/valeurNbAnnees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nbAnnees"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:text="XX"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:id="@+id/txtInvestissementVan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valeurNbAnnees"
+        android:text="Investissement"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/valeurInvestissementVan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:text="000.00"
+        android:fontFamily="monospace"
+        android:layout_alignBaseline="@id/txtInvestissementVan"/>
+
+    <TextView
+        android:id="@+id/txtTaux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/taux"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/txtInvestissementVan"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/valeurTaux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000.00"
+        android:layout_alignBaseline="@id/txtTaux"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"
+        android:textSize="30sp"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtFlux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flux"
+        android:layout_below="@id/txtTaux"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"/>
+
+
+    <TextView
+        android:id="@+id/valeurFlux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000.00"
+        android:layout_alignBaseline="@id/txtFlux"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"
+        android:textSize="30sp"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtResultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/van"
+        android:layout_below="@id/txtFlux"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"/>
+
+
+    <TextView
+        android:id="@+id/valeurVan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000.00"
+        android:layout_below="@id/valeurFlux"
+        android:layout_alignBaseline="@id/txtResultat"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"
+        android:textSize="30sp"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"/>
+
+
+    <ImageView
+        android:id="@+id/isRentableVan"
+        android:layout_width="119dp"
+        android:layout_height="109dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"/>
+
+</RelativeLayout>
